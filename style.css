@@ -1,0 +1,629 @@
+.profile-center {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.profile-center img {
+    width: 220px;
+    height: 260px;
+    object-fit: cover;
+    border: 4px solid #d5ad58;
+    border-radius: 18px;
+}
+
+.profile-center h3 {
+    color: #d5ad58;
+    margin-top: 12px;
+}
+
+.profile-center p {
+    color: #fff;
+}/* =================================
+   1. GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f8f6ef;
+    color: #26352d;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 85px 0;
+}
+
+
+/* =================================
+   2. HEADER & NAVBAR
+================================= */
+
+.header {
+    background: #153b2b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px #00000020;
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > i {
+    color: #d5ad58;
+    font-size: 35px;
+}
+
+.logo h2 {
+    font-size: 19px;
+    color: #fff;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #d5ad58;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigation a {
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #d5ad58;
+}
+
+.header-button {
+    background: #d5ad58;
+    color: #153b2b;
+    padding: 9px 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    min-height: 590px;
+    background:
+    url("../images/hero.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        #102d22d9,
+        #102d2299
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #e6c779;
+    border: 1px solid #d5ad58;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.hero h1 span {
+    display: block;
+    color: #e5bd68;
+    font-size: 30px;
+}
+
+.hero-content > p {
+    max-width: 600px;
+    color: #eee;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-gold {
+    background: #d5ad58;
+    color: #153b2b;
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: #153b2bcc;
+    color: #e6c779;
+    font-size: 13px;
+}
+
+
+/* =================================
+   4. SECTION HEADINGS
+================================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading > span {
+    color: #b38b3c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #153b2b;
+    margin: 5px 0;
+}
+
+.heading-line {
+    width: 65px;
+    height: 3px;
+    background: #d5ad58;
+    margin: 12px auto;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =================================
+   5. INTRODUCTION
+================================= */
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.intro-text h3 {
+    color: #153b2b;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.intro-text p {
+    color: #666;
+    margin-bottom: 15px;/* الصورة الشخصية لمصمم الموسوعة */
+.profile-side {
+    width: 280px;
+    min-width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-side img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border: 4px solid #d5ad58;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.profile-side p {
+    color: #d5ad58;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* ترتيب الصورة والنص */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .profile-side {
+        margin: 25px auto;
+    }
+}
+}
+
+.intro-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #00000020;
+}
+
+.read-more {
+    display: inline-block;
+    color: #a47c32;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* =================================
+   6. HISTORY CARDS
+================================= */
+
+.history-section {
+    background: #eeeae0;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.history-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border-bottom: 3px solid #d5ad58;
+}
+
+.history-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000015;
+}
+
+.history-icon {
+    color: #b38b3c;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.history-card h3 {
+    color: #153b2b;
+    margin-bottom: 10px;
+}
+
+.history-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.history-card a {
+    display: inline-block;
+    color: #a47c32;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =================================
+   7. MAIN SECTIONS
+================================= */
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.section-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.3s;
+}
+
+.section-card:hover {
+    transform: translateY(-7px);
+}
+
+.section-card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-placeholder {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e6e1d4;
+    color: #a47c32;
+    font-size: 60px;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content > i {
+    color: #b38b3c;
+    font-size: 22px;
+}
+
+.card-content h3 {
+    color: #153b2b;
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: #a47c32;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   8. HERITAGE SECTION
+================================= */
+
+.heritage-section {
+    background:
+    linear-gradient(#153b2bd9, #153b2bd9),
+    url("../images/heritage.jpg") center/cover no-repeat;
+
+    color: white;
+    text-align: center;
+}
+
+.heritage-content {
+    padding: 45px 0;
+}
+
+.heritage-label {
+    color: #e5bd68;
+}
+
+.heritage-content h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.heritage-content p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #eee;
+}
+
+
+/* =================================
+   9. SOURCES SECTION
+================================= */
+
+.sources-section {
+    text-align: center;
+}
+
+
+/* =================================
+   10. FOOTER
+================================= */
+
+.footer {
+    background: #102d22;
+    color: white;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #e5bd68;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #e5bd68;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff25;
+    padding-top: 18px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+/* =================================
+   11. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 950px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .history-grid,
+    .sections-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .header-button {
+        display: none;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 550px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h1 span {
+        font-size: 23px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .history-grid,
+    .sections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+}
+.designer {
+    margin-top: 12px;
+    color: #d5ad58;
+    font-size: 14px;
+}
+
+.designer span {
+    color: #ffffff;
+    font-weight: bold;
+}
+.profile-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-side img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #d5ad58;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
